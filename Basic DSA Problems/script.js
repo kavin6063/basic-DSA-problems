@@ -48,23 +48,23 @@
 // return console.log(secondLargest);
 
 // 2ND SMALLEST NO IN ARR
-const arr = [3, 5, 1, 7, 8, 6, 74, 9, 22];
+// const arr = [3, 5, 1, 7, 8, 6, 74, 9, 22];
 
-let smallest = arr[0];
-let length = arr.length;
+// let smallest = arr[0];
+// let length = arr.length;
 
-for (let i = 1; i < length; i++) {
-  if (arr[i] < smallest) {
-    smallest = arr[i];
-  }
-}
+// for (let i = 1; i < length; i++) {
+//   if (arr[i] < smallest) {
+//     smallest = arr[i];
+//   }
+// }
 
-let secondSmallest = arr[0];
+// let secondSmallest = arr[0];
 
-for (let i = 1; i < length; i++) {
-  if (arr[i] > smallest && arr[i] < secondSmallest) {
-    secondSmallest = arr[i];
-  }
-}
+// for (let i = 1; i < length; i++) {
+//   if (arr[i] > smallest && arr[i] < secondSmallest) {
+//     secondSmallest = arr[i];
+//   }
+// }
 
-return console.log(secondSmallest);
+// return console.log(secondSmallest);
