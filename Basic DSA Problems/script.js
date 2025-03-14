@@ -126,3 +126,37 @@
 
 // const number = 17;
 // const result = isPrime(number);
+
+// range of prime no
+
+// for (let i = 2; i <= 100; i++) {
+//   let isPrime = true;
+//   for (let j = 2; j < i; j++) {
+//     if (i % j === 0) {
+//       isPrime = false;
+//       break;
+//     }
+//   }
+//   if (isPrime) {
+//     console.log(i);
+//   }
+// }
+
+// given no prime or not
+
+// function isPrime(number) {
+//   if (number <= 1) {
+//     return false;
+//   }
+//   for (let i = 2; i <= Math.sqrt(number); i++) {
+//     if (number % i === 0) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
+// const number = 17;
+// const result = isPrime(number);
+
+// console.log(result);
