@@ -94,3 +94,32 @@
 // }
 
 // return console.log("no duplicates");
+
+// Permutaon of string
+
+// let str = "abc";
+
+// for (let i = 0; i < str.length; i++) {
+//   for (let j = 0; j < str.length; j++) {
+//     for (let k = 0; k < str.length; k++) {
+//       console.log(str[i] + str[j] + str[k]);
+//     }
+//   }
+// }
+
+// return
+
+// console.log("No Permutation");
+
+// let arr = [1, 2, 3, 4, 5];
+
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = i + 1; j < arr.length; j++) {
+//     for (let k = j + 1; k < arr.length; k++) {
+//       for (let l = k + 1; l < arr.length; l++) {
+//         for (let m = l + 1; m < arr.length; m++) {
+//           console.log(arr[i], arr[j], arr[k], arr[l], arr[m]);
+//         }
+//       }
+//     }
+//   }
