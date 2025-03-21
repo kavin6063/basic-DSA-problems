@@ -123,3 +123,106 @@
 //       }
 //     }
 //   }
+
+// Reverse a string
+
+// const str = "hello";
+
+// const reverseFn = (str) => {
+//   let reversed = "";
+
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     reversed += str[i];
+//   }
+//   return reversed;
+// };
+
+// console.log(reverseFn(str));
+
+// Longest Word in Sentence
+
+// const LargestWordfn = (Sentence) => {
+//   const words = Sentence.split(" ");
+//   let longestword = "";
+
+//   for (let word of words) {
+//     if (word.length > longestword.length) {
+//       longestword = word;
+//     }
+//   }
+//   return longestword;
+// };
+
+// console.log(LargestWordfn("my name is kavin"));
+
+//  palinmdrome
+
+// const str = "racecar";
+
+// const palindrome = (str) => {
+//   let reversed = "";
+
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     reversed += str[i];
+//   }
+//   if (reversed === str) {
+//     return "palindrome ";
+//   } else {
+//     return "not plaindrome";
+//   }
+// };
+
+// console.log(palindrome(str));
+
+// Remove duplicate from array
+
+// let arr = [1, 1, 2, 2, 4, 6, 7, 4, 0];
+
+// function removeDuplicate(arr) {
+//   let result = [];
+
+//   for (i = 0; i < arr.length; i++) {
+//     if (result.indexOf(arr[i]) === -1) {
+//       result.push(arr[i]);
+//     }
+//   }
+//   return result;
+// }
+// console.log(removeDuplicate(arr));
+
+//  Anagrams
+
+const str1 = "listen";
+const str2 = "silent";
+
+function Customsort(arr) {
+  const len = arr.length;
+
+  for (let i = 0; i < len; i++) {
+    for (let j = i + 1; j < len; j++) {
+      if (arr[i] > arr[j]) {
+        let temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+      }
+    }
+  }
+  return arr;
+}
+
+function isAnagram(str1, str2) {
+  if (str1.length !== str2.length) {
+    return "not anagram"; // If lengths are different, they can't be anagrams
+  }
+
+  const sortedStr1 = Customsort(str1.split("")).join("");
+  const sortedStr2 = Customsort(str2.split("")).join("");
+
+  if (sortedStr1 === sortedStr2) {
+    return "anagram";
+  } else {
+    return "not anagram";
+  }
+}
+
+console.log(isAnagram(str1, str2));
