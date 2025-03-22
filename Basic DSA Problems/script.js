@@ -192,37 +192,37 @@
 
 //  Anagrams
 
-const str1 = "listen";
-const str2 = "silent";
+// const str1 = "listen";
+// const str2 = "silent";
 
-function Customsort(arr) {
-  const len = arr.length;
+// function Customsort(arr) {
+//   const len = arr.length;
 
-  for (let i = 0; i < len; i++) {
-    for (let j = i + 1; j < len; j++) {
-      if (arr[i] > arr[j]) {
-        let temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
-      }
-    }
-  }
-  return arr;
-}
+//   for (let i = 0; i < len; i++) {
+//     for (let j = i + 1; j < len; j++) {
+//       if (arr[i] > arr[j]) {
+//         let temp = arr[i];
+//         arr[i] = arr[j];
+//         arr[j] = temp;
+//       }
+//     }
+//   }
+//   return arr;
+// }
 
-function isAnagram(str1, str2) {
-  if (str1.length !== str2.length) {
-    return "not anagram"; // If lengths are different, they can't be anagrams
-  }
+// function isAnagram(str1, str2) {
+//   if (str1.length !== str2.length) {
+//     return "not anagram"; // If lengths are different, they can't be anagrams
+//   }
 
-  const sortedStr1 = Customsort(str1.split("")).join("");
-  const sortedStr2 = Customsort(str2.split("")).join("");
+//   const sortedStr1 = Customsort(str1.split("")).join("");
+//   const sortedStr2 = Customsort(str2.split("")).join("");
 
-  if (sortedStr1 === sortedStr2) {
-    return "anagram";
-  } else {
-    return "not anagram";
-  }
-}
+//   if (sortedStr1 === sortedStr2) {
+//     return "anagram";
+//   } else {
+//     return "not anagram";
+//   }
+// }
 
-console.log(isAnagram(str1, str2));
+// console.log(isAnagram(str1, str2));
