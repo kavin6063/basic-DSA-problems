@@ -209,20 +209,3 @@
 //   }
 //   return arr;
 // }
-
-// function isAnagram(str1, str2) {
-//   if (str1.length !== str2.length) {
-//     return "not anagram"; // If lengths are different, they can't be anagrams
-//   }
-
-//   const sortedStr1 = Customsort(str1.split("")).join("");
-//   const sortedStr2 = Customsort(str2.split("")).join("");
-
-//   if (sortedStr1 === sortedStr2) {
-//     return "anagram";
-//   } else {
-//     return "not anagram";
-//   }
-// }
-
-// console.log(isAnagram(str1, str2));
